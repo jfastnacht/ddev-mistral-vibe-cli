@@ -1,6 +1,10 @@
 name: mistral-vibe-cli
 
 project_files:
-  - docker-compose.mistral-vibe-cli.yaml
+  - commands/web/vibe
+  - mistral-vibe-cli/.env
+  - mistral-vibe-cli/.gitignore
+  - mistral-vibe-cli/config.toml
+  - web-build/Dockerfile.mistral-vibe-cli
 
 ddev_version_constraint: '>= v1.24.3'

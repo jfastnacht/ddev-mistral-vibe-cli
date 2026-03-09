@@ -1,0 +1,8 @@
+#ddev-generated
+# Vibe config
+.vibe.json
+.vibe/
+logs/
+vibe.log
+vibehistory
+update_cache.json

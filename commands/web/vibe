@@ -1,0 +1,11 @@
+#ddev-generated
+#!/bin/bash
+
+## Description: Mistral Vibe CLI
+## Usage: vibe
+## Example: ddev vibe [...]
+
+set -e
+source $HOME/.local/bin/env
+
+vibe $@
