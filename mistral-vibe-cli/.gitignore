@@ -1,5 +1,6 @@
 #ddev-generated
 # Vibe config
+.env
 .vibe.json
 .vibe/
 logs/
