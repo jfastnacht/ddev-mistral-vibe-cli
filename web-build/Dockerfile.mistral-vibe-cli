@@ -1,8 +1,4 @@
 #ddev-generated
 
-USER 1000
-
 RUN set -ex \
-    && curl -LsSf https://mistral.ai/vibe/install.sh | bash
-
-USER 0
+    && curl -LsSf https://mistral.ai/vibe/install.sh | sudo -u ${username} bash
