@@ -1,0 +1,4 @@
+#ddev-generated
+
+RUN set -ex \
+    && curl -LsSf https://mistral.ai/vibe/install.sh | sudo -u ${username} bash

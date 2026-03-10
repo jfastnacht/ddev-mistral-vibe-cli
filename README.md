@@ -3,11 +3,11 @@
 [![last commit](https://img.shields.io/github/last-commit/jfastnacht/ddev-mistral-vibe-cli)](https://github.com/jfastnacht/ddev-mistral-vibe-cli/commits)
 [![release](https://img.shields.io/github/v/release/jfastnacht/ddev-mistral-vibe-cli)](https://github.com/jfastnacht/ddev-mistral-vibe-cli/releases/latest)
 
-# DDEV Mistral Vibe Cli
+# DDEV Mistral Vibe CLI
 
 ## Overview
 
-This add-on integrates Mistral Vibe Cli into your [DDEV](https://ddev.com/) project.
+This add-on integrates Mistral Vibe CLI into your [DDEV](https://ddev.com/) project.
 
 ## Installation
 
@@ -18,30 +18,19 @@ ddev restart
 
 After installation, make sure to commit the `.ddev` directory to version control.
 
+## Configuration
+
+You can find the configuration files within `.ddev/mistral-vibe-cli`. Add your AI service and model configuration
+to the `.ddev/mistral-vibe-cli/config.toml` and set your API key in `.ddev/mistral-vibe-cli/.env`.
+
+For more information on configuring Mistral Vibe CLI consult the documentation at
+https://docs.mistral.ai/mistral-vibe/introduction/configuration
+
 ## Usage
 
 | Command | Description |
 | ------- | ----------- |
-| `ddev describe` | View service status and used ports for Mistral Vibe Cli |
-| `ddev logs -s mistral-vibe-cli` | Check Mistral Vibe Cli logs |
-
-## Advanced Customization
-
-To change the Docker image:
-
-```bash
-ddev dotenv set .ddev/.env.mistral-vibe-cli --mistral-vibe-cli-docker-image="ddev/ddev-utilities:latest"
-ddev add-on get jfastnacht/ddev-mistral-vibe-cli
-ddev restart
-```
-
-Make sure to commit the `.ddev/.env.mistral-vibe-cli` file to version control.
-
-All customization options (use with caution):
-
-| Variable | Flag | Default |
-| -------- | ---- | ------- |
-| `MISTRAL_VIBE_CLI_DOCKER_IMAGE` | `--mistral-vibe-cli-docker-image` | `ddev/ddev-utilities:latest` |
+| `ddev vibe` | Run Mistral Vibe CLI in web container |
 
 ## Credits
 
