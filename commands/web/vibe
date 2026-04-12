@@ -6,8 +6,8 @@
 ## Example: ddev vibe [...]
 
 set -e
-source $HOME/.local/bin/env
 
+export PATH="$HOME/.local/bin:$PATH"
 export VIBE_HOME=$DDEV_APPROOT/.ddev/mistral-vibe-cli
 
 vibe $@
