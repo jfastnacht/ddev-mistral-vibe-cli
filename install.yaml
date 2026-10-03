@@ -7,4 +7,4 @@ project_files:
   - mistral-vibe-cli/config.toml
   - web-build/Dockerfile.mistral-vibe-cli
 
-ddev_version_constraint: '>= v1.24.3'
+ddev_version_constraint: '>= v1.24.10'
